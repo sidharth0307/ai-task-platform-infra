@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: ai-frontend
-        image: sidharth0307/ai-frontend:latest
+        image: sidharth0307/ai-frontend:7e79fc015d093b92a409691b117de6586c920a51
         ports:
         - containerPort: 8080
         resources:

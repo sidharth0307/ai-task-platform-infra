@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: ai-backend
-        image: sidharth0307/ai-backend:latest
+        image: sidharth0307/ai-backend:7e79fc015d093b92a409691b117de6586c920a51
         ports:
         - containerPort: 5000
         envFrom:
