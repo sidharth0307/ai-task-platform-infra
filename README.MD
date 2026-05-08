@@ -17,6 +17,9 @@ This repository acts as the single source of truth for the Kubernetes infrastruc
 2. A GitHub Action automatically builds the Docker images, pushes them to Docker Hub, and updates the image tags in this infrastructure repository.
 3. Argo CD detects the configuration drift in this repository and automatically synchronizes the live Kubernetes cluster with zero downtime.
 
+## Live Argo CD Dashboard Sync
+![Argo CD Dashboard](./argo-dashboard.png)
+
 ## Cluster Setup & Disaster Recovery
 To deploy this entire architecture from scratch to a fresh Kubernetes cluster:
 
@@ -32,5 +35,3 @@ kubectl apply -f argocd/application.yaml
 kubectl port-forward svc/argocd-server -n argocd 8443:443
 # Go to https://localhost:8443
 
-## Live Argo CD Dashboard Sync
-![Argo CD Dashboard](./argo-dashboard.png)
