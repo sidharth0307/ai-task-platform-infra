@@ -31,3 +31,6 @@ kubectl apply -f argocd/application.yaml
 # 3. Access the Argo CD Dashboard
 kubectl port-forward svc/argocd-server -n argocd 8443:443
 # Go to https://localhost:8443
+
+## Live Argo CD Dashboard Sync
+![Argo CD Dashboard](./argo-dashboard.png)
