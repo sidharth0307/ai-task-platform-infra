@@ -4,7 +4,7 @@ metadata:
   name: ai-worker
   namespace: ai-task-platform
 spec:
-  # Assignment Requirement: Worker should support scaling to multiple replicas
+  # Worker should support scaling to multiple replicas
   replicas: 3 
   selector:
     matchLabels:
